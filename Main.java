@@ -33,208 +33,106 @@ public class MyPanel extends JPanel {
     private JLabel jcomp27;
     private JLabel jcomp28;
     private JLabel jcomp29;
-    private JLabel jcomp30;
     private JTextField jcomp31;
     private JLabel jcomp32;
     private JLabel jcomp33;
     private JLabel jcomp34;
-    private JLabel jcomp35;
     private JTextField jcomp36;
     private JLabel jcomp37;
     private JLabel jcomp38;
     private JLabel jcomp39;
-    private JLabel jcomp40;
-    private JLabel jcomp41;
-    private JTextArea jcomp42;
-    private JTextArea jcomp43;
-    private JTextArea jcomp44;
-    private JList jcomp45;
-    private JTextArea jcomp46;
-    private JTextArea jcomp47;
-    private JTextArea jcomp48;
-    private JPasswordField jcomp49;
-    private JTextArea jcomp50;
+    private JTextField jcomp40;
 
     public MyPanel() {
-        //construct preComponents
-        String[] jcomp6Items = {"Ajustes", "Log in", "Sign off"};
-        String[] jcomp16Items = {"1. ", "2. "};
-        String[] jcomp45Items = {"..."};
-
-        //construct components
-        jcomp1 = new JButton ("Indice");
-        jcomp2 = new JButton ("Mascota");
-        jcomp3 = new JLabel ("Busqueda");
-        jcomp4 = new JTextField (4);
-        jcomp5 = new JLabel ("Cuenta");
-        jcomp6 = new JComboBox (jcomp6Items);
-        jcomp7 = new JButton ("ingresos");
-        jcomp8 = new JButton ("Gastos");
-        jcomp9 = new JButton ("Alertas");
-        jcomp10 = new JButton ("Deudas");
-        jcomp11 = new JButton ("Metas");
-        jcomp12 = new JLabel ("Tu mascota");
-        Felicidad = new JTextArea (5, 5);
-        jcomp14 = new JSlider (0, 20);
-        jcomp15 = new JLabel ("¡Alertas!");
-        jcomp16 = new JList (jcomp16Items);
-        jcomp17 = new JLabel ("Tu presupuesto");
-        jcomp18 = new JLabel ("Disponible");
-        jcomp19 = new JPasswordField (5);
-        jcomp20 = new JLabel ("Egresos");
-        jcomp21 = new JTextField (5);
-        jcomp22 = new JLabel ("Total Gastado");
-        jcomp23 = new JTextField (5);
-        jcomp24 = new JLabel ("Metas");
-        jcomp25 = new JLabel ("Buzón PQRS");
-        jcomp26 = new JTextField (5);
-        jcomp27 = new JLabel ("Registra tus Ingresos");
-        jcomp28 = new JLabel ("Nombre");
-        jcomp29 = new JLabel ("Cantidad");
-        jcomp30 = new JLabel ("Total");
-        jcomp31 = new JTextField (5);
-        jcomp32 = new JLabel ("Registra tus gastos");
-        jcomp33 = new JLabel ("Nombre");
-        jcomp34 = new JLabel ("Cantidad");
-        jcomp35 = new JLabel ("Total");
-        jcomp36 = new JTextField (5);
-        jcomp37 = new JLabel ("Registra tus deudas");
-        jcomp38 = new JLabel ("Nombre");
-        jcomp39 = new JLabel ("Cantidad");
-        jcomp40 = new JLabel ("Total");
-        jcomp41 = new JLabel ("Consejo del día");
-        jcomp42 = new JTextArea (5, 5);
-        jcomp43 = new JTextArea (5, 5);
-        jcomp44 = new JTextArea (5, 5);
-        jcomp45 = new JList (jcomp45Items);
-        jcomp46 = new JTextArea (5, 5);
-        jcomp47 = new JTextArea (5, 5);
-        jcomp48 = new JTextArea (5, 5);
-        jcomp49 = new JPasswordField (5);
-        jcomp50 = new JTextArea (5, 5);
-
-        //set components properties
-        jcomp14.setOrientation (JSlider.HORIZONTAL);
-        jcomp14.setMinorTickSpacing (1);
-        jcomp14.setMajorTickSpacing (5);
-        jcomp14.setPaintTicks (true);
-        jcomp14.setPaintLabels (true);
-
-        //adjust size and set layout
-        setPreferredSize (new Dimension (626, 331));
-        setLayout (null);
-
-        //add components
-        add (jcomp1);
-        add (jcomp2);
-        add (jcomp3);
-        add (jcomp4);
-        add (jcomp5);
-        add (jcomp6);
-        add (jcomp7);
-        add (jcomp8);
-        add (jcomp9);
-        add (jcomp10);
-        add (jcomp11);
-        add (jcomp12);
-        add (Felicidad);
-        add (jcomp14);
-        add (jcomp15);
-        add (jcomp16);
-        add (jcomp17);
-        add (jcomp18);
-        add (jcomp19);
-        add (jcomp20);
-        add (jcomp21);
-        add (jcomp22);
-        add (jcomp23);
-        add (jcomp24);
-        add (jcomp25);
-        add (jcomp26);
-        add (jcomp27);
-        add (jcomp28);
-        add (jcomp29);
-        add (jcomp30);
-        add (jcomp31);
-        add (jcomp32);
-        add (jcomp33);
-        add (jcomp34);
-        add (jcomp35);
-        add (jcomp36);
-        add (jcomp37);
-        add (jcomp38);
-        add (jcomp39);
-        add (jcomp40);
-        add (jcomp41);
-        add (jcomp42);
-        add (jcomp43);
-        add (jcomp44);
-        add (jcomp45);
-        add (jcomp46);
-        add (jcomp47);
-        add (jcomp48);
-        add (jcomp49);
-        add (jcomp50);
-
-        //set component bounds (only needed by Absolute Positioning)
-        jcomp1.setBounds (5, 25, 100, 20);
-        jcomp2.setBounds (5, 55, 100, 20);
-        jcomp3.setBounds (425, 0, 100, 25);
-        jcomp4.setBounds (400, 25, 100, 25);
-        jcomp5.setBounds (525, 0, 110, 25);
-        jcomp6.setBounds (525, 25, 80, 20);
-        jcomp7.setBounds (5, 85, 100, 25);
-        jcomp8.setBounds (5, 120, 100, 25);
-        jcomp9.setBounds (5, 155, 100, 25);
-        jcomp10.setBounds (5, 190, 100, 25);
-        jcomp11.setBounds (5, 225, 100, 25);
-        jcomp12.setBounds (195, 15, 100, 25);
-        Felicidad.setBounds (190, 50, 80, 35);
-        jcomp14.setBounds (185, 90, 90, 40);
-        jcomp15.setBounds (200, 145, 100, 25);
-        jcomp16.setBounds (190, 175, 85, 45);
-        jcomp17.setBounds (180, 230, 100, 25);
-        jcomp18.setBounds (95, 260, 100, 25);
-        jcomp19.setBounds (185, 260, 90, 20);
-        jcomp20.setBounds (100, 285, 100, 25);
-        jcomp21.setBounds (185, 285, 90, 20);
-        jcomp22.setBounds (75, 310, 100, 25);
-        jcomp23.setBounds (185, 315, 90, 20);
-        jcomp24.setBounds (210, 350, 100, 25);
-        jcomp25.setBounds (195, 430, 100, 25);
-        jcomp26.setBounds (180, 455, 100, 25);
-        jcomp27.setBounds (430, 60, 140, 25);
-        jcomp28.setBounds (395, 90, 100, 25);
-        jcomp29.setBounds (535, 90, 100, 25);
-        jcomp30.setBounds (415, 175, 100, 25);
-        jcomp31.setBounds (460, 175, 100, 25);
-        jcomp32.setBounds (435, 215, 125, 25);
-        jcomp33.setBounds (390, 235, 100, 25);
-        jcomp34.setBounds (530, 235, 100, 25);
-        jcomp35.setBounds (420, 310, 100, 25);
-        jcomp36.setBounds (465, 315, 100, 25);
-        jcomp37.setBounds (440, 350, 130, 25);
-        jcomp38.setBounds (400, 375, 100, 25);
-        jcomp39.setBounds (535, 375, 100, 25);
-        jcomp40.setBounds (425, 450, 100, 25);
-        jcomp41.setBounds (10, 385, 100, 25);
-        jcomp42.setBounds (380, 115, 85, 40);
-        jcomp43.setBounds (515, 115, 90, 40);
-        jcomp44.setBounds (380, 265, 95, 40);
-        jcomp45.setBounds (5, 410, 100, 75);
-        jcomp46.setBounds (510, 265, 100, 40);
-        jcomp47.setBounds (380, 400, 100, 40);
-        jcomp48.setBounds (515, 400, 90, 40);
-        jcomp49.setBounds (465, 450, 100, 25);
-        jcomp50.setBounds (190, 380, 85, 40);
+        setupComponents();
+        addActionListeners();
     }
 
+    private void setupComponents() {
+        setPreferredSize(new Dimension(626, 331));
+        setLayout(null);
 
-    public static void main (String[] args) {
-        JFrame frame = new JFrame ("MyPanel");
-        frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add (new MyPanel());
+        jcomp1 = new JButton("Indice");
+        jcomp2 = new JButton("Mascota");
+        jcomp7 = new JButton("Ingresos");
+        jcomp8 = new JButton("Gastos");
+        jcomp9 = new JButton("Alertas");
+        jcomp10 = new JButton("Deudas");
+        jcomp11 = new JButton("Metas");
+
+        add(jcomp1);
+        add(jcomp2);
+        add(jcomp7);
+        add(jcomp8);
+        add(jcomp9);
+        add(jcomp10);
+        add(jcomp11);
+
+        jcomp1.setBounds(5, 25, 100, 20);
+        jcomp7.setBounds(5, 85, 100, 25);
+        jcomp8.setBounds(5, 120, 100, 25);
+        jcomp9.setBounds(5, 155, 100, 25);
+        jcomp10.setBounds(5, 190, 100, 25);
+        jcomp11.setBounds(5, 225, 100, 25);
+    }
+
+    private void addActionListeners() {
+        jcomp7.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                registrarIngresos();
+            }
+        });
+
+        jcomp8.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                registrarGastos();
+            }
+        });
+
+        jcomp9.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                mostrarAlertas();
+            }
+        });
+
+        jcomp10.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                registrarDeudas();
+            }
+        });
+
+        jcomp11.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                gestionarMetas();
+            }
+        });
+    }
+
+    private void registrarIngresos() {
+        JOptionPane.showMessageDialog(this, "Funcionalidad para registrar ingresos activada");
+    }
+
+    private void registrarGastos() {
+        JOptionPane.showMessageDialog(this, "Funcionalidad para registrar gastos activada");
+    }
+
+    private void mostrarAlertas() {
+        JOptionPane.showMessageDialog(this, "Mostrando alertas de gastos excesivos");
+    }
+
+    private void registrarDeudas() {
+        JOptionPane.showMessageDialog(this, "Funcionalidad para registrar deudas activada");
+    }
+
+    private void gestionarMetas() {
+        JOptionPane.showMessageDialog(this, "Funcionalidad para gestionar metas activada");
+    }
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("MyPanel");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(new MyPanel());
         frame.pack();
-        frame.setVisible (true);
+        frame.setVisible(true);
     }
 }
